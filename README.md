@@ -1,7 +1,16 @@
 # X11_paste_from_C
 
+- [Intro](#intro)
 - [Prerequisites](#prerequisites)
 - [Running](#running)
+
+Intro
+-----
+
+This is a quick demo showing how to simulate a Ctrl-V (paste) command from
+a C program. After the program has been run it waits for a given amount of
+time (by default 5s) and sends a paste shortcut to the GUI application
+where the mouse cursor is (when the timeout has expired).
 
 Prerequisites
 -------------
@@ -16,4 +25,17 @@ dependencies by typing in a terminal the following commands:
 Running
 -------
 
+To run the demo type the following commands in a terminal:
 
+    make build
+    make run
+
+You can modify the timeout in the paste.c file (default 5s).
+In order to clean up run:
+
+    make clean
+
+Enjoy!
+
+
+    
